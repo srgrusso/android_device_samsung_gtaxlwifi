@@ -40,9 +40,11 @@ on post-fs-data
     chown system system /data/privatemode
     restorecon /data/privatemode
 
-# Permissions for gnss
-    chmod 0660 /dev/gnss_ipc
-    chown system system /dev/gnss_ipc
+#GPS
+    chown root system /dev/ttySAC1
+    chmod 0660 /dev/ttySAC1
+    chown root system /sys/class/sec/gps/GPS_PWR_EN/value
+    chmod 0664 /sys/class/sec/gps/GPS_PWR_EN/value
     mkdir /data/system 0771 system system
     chown system system /data/system
     mkdir /data/system/gps 0771 system system
@@ -52,9 +54,9 @@ on post-fs-data
     rm /data/system/gps/beidou_started
     rm /data/system/gps/smd_started
     rm /data/system/gps/sv_cno.info
-    
+
     setprop vold.post_fs_data_done 1
-    
+
 # /efs/factory.prop for Dual / Single SIM settings
     chown radio radio /efs/factory.prop
     chmod 0600 /efs/factory.prop
@@ -759,13 +761,14 @@ service argos-daemon /system/bin/argosd
     class main
     user system
     group system radio
-	
+
 # GPS
-service gpsd /system/bin/gpsd
+service gpsd /system/bin/gpsd -c /system/etc/gps.xml
     class main
     user gps
-    group system inet wakelock
+    group system inet net_raw wakelock
     ioprio be 0
+    seclabel u:r:gpsd:s0
 
 # LPM
 service lpm /system/bin/lpm
