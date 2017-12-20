@@ -157,7 +157,7 @@ TARGET_OTA_ASSERT_DEVICE := gtaxlwifi
 
 # TWRP
 ifeq ($(RECOVERY_VARIANT),twrp)
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/twrp.fstab
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/twrp.fstab
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := /sys/class/backlight/panel/brightness
