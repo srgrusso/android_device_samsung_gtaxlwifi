@@ -206,7 +206,6 @@
         <item>3000</item>
         <item>5000</item>
         <item>10000</item>
-        <item>30000</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -214,56 +213,20 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>13</item>   <!-- 0-2 -->
-        <item>25</item>   <!-- 3-7 -->
-        <item>32</item>   <!-- 5-15 -->
+        <item>10</item>   <!-- 0-2 -->
+        <item>22</item>   <!-- 3-7 -->
+        <item>31</item>   <!-- 5-15 -->
         <item>41</item>   <!-- 15-50 -->
         <item>52</item>   <!-- 50-100 -->
-        <item>62</item>   <!-- 100-200 -->
-        <item>69</item>   <!-- 200-400 -->
-        <item>78</item>   <!-- 400-1000 -->
-        <item>88</item>   <!-- 1000-2000 -->
+        <item>64</item>   <!-- 100-200 -->
+        <item>67</item>   <!-- 200-400 -->
+        <item>81</item>   <!-- 400-1000 -->
+        <item>96</item>   <!-- 1000-2000 -->
         <item>134</item>  <!-- 2000-3000 -->
         <item>178</item>  <!-- 3000-5000 -->
         <item>225</item>  <!-- 5000-10000 -->
-        <item>255</item>  <!-- 10000-30000 -->
-        <item>255</item>  <!-- 30000+ -->
+        <item>255</item>  <!-- 10000+ -->
     </integer-array>
-
-    <!-- Minimum screen brightness setting allowed by the power manager.
-         The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">2</integer>
-
-    <integer name="config_screenBrightnessSettingMaximum">255</integer>
-
-    <!-- Default screen brightness setting.
-         Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">117</integer>
-
-    <!-- Screen brightness used to dim the screen when the user activity
-         timeout expires.  May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">14</integer>
-
-    <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
-         for debouncing the light sensor.  Different constants are used to debounce the light sensor
-         when adapting to brighter or darker environments.  This parameter controls how quickly
-         brightness changes occur in response to an observed change in light level that exceeds the
-         hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightFastDebounce">500</integer>
-    <integer name="config_autoBrightnessBrighteningLightDebounce">2500</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">5000</integer>
-
-    <!-- When the screen is turned on, the previous estimate of the ambient light level at the time
-         the screen was turned off is restored and is used to determine the initial screen
-         brightness.
-         If this flag is true, then the ambient light level estimate will be promptly recomputed
-         after the warm-up interface and the screen brightness will be adjusted immediately.
-         If this flag is false, then the ambient light level estimate will be adjusted more
-         gradually in the same manner that normally happens when the screen is on according to the
-         brightening or dimming debounce thresholds.  As a result, it may take somewhat longer to
-         adapt to the environment.  This mode may be better suited for watches. -->
-    <bool name="config_autoBrightnessResetAmbientLuxAfterWarmUp">true</bool>
 
     <!-- Initial light sensor event rate in milliseconds for automatic brightness control. This is
          used for obtaining the first light sample when the device stops dozing.
