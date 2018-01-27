@@ -200,9 +200,6 @@ TW_NO_EXFAT_FUSE := true
 TW_EXCLUDE_SUPERSU := true
 endif
 
-# Seccomp filters
-BOARD_SECCOMP_POLICY += $(LOCAL_PATH)/seccomp
-
 zero_shims_omx := \
     /system/lib/omx/libOMX.Exynos.AVC.Decoder.so|/system/lib/SHIM_TARGET.so \
     /system/lib/omx/libOMX.Exynos.AVC.Encoder.so|/system/lib/SHIM_TARGET.so \
