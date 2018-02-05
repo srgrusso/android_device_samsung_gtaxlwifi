@@ -721,9 +721,11 @@ on charger
 service drm /system/bin/drmserver
     class main
     user drm
+    group system drm inet drmrpc
+
 # [ SEC_MM_DRM
 # fix
-    group system drm inet drmrpc readproc dpgp
+#    group system drm inet drmrpc readproc dpgp
 # org
 #    group drm system inet drmrpc
 # ]
