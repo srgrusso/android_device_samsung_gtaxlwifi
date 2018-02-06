@@ -224,6 +224,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
     android.hardware.power@1.0-service \
 
+# permission-updater
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)//power/android.hardware.power@1.0-service.rc:system/vendor/etc/init/android.hardware.power@1.0-service.rc
 # Lights
 PRODUCT_PACKAGES += \
     lights.universal7870 \
