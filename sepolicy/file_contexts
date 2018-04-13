@@ -34,12 +34,12 @@
 /dev/mipi-lli/lli_control    u:object_r:mif_device:s0
 
 /dev/ttyBCM[0-9]*            u:object_r:bbd_device:s0
-/dev/ttySAC[2-9]*            u:object_r:bluetooth_device:s0
+/dev/ttySAC[1-9]*            u:object_r:gpsd_device:s0
 #/dev/ttySAC0                 u:object_r:hci_attach_dev:s0
 
 /dev/ttySAC0                 u:object_r:bluetooth_device:s0
-/dev/ttySAC1                 u:object_r:gpsd_device:s0
-/dev/ttyHS0                  u:object_r:ttyHS0_device:s0
+#/dev/ttySAC1                 u:object_r:gpsd_device:s0
+#/dev/ttyHS0                  u:object_r:ttyHS0_device:s0
 
 /dev/block/mmcblk0p[0-9]*    u:object_r:emmcblk_device:s0
 
@@ -85,8 +85,12 @@
 /data/misc/mcRegistry(/.*)?  u:object_r:mobicore_data_file:s0
 
 # bluetooth
-/sys/devices/bluetooth.[0-9]*/rfkill/rfkill0/state  u:object_r:sysfs_bluetooth_writable:s0
-/sys/devices/bluetooth.[0-9]*/rfkill/rfkill0/type   u:object_r:sysfs_bluetooth_writable:s0
+#/sys/devices/bluetooth.[0-9]*/rfkill/rfkill0/state  u:object_r:sysfs_bluetooth_writable:s0
+#/sys/devices/bluetooth.[0-9]*/rfkill/rfkill0/type   u:object_r:sysfs_bluetooth_writable:s0
+
+/sys/devices/bluetooth/rfkill/rfkill0/state  u:object_r:sysfs_bluetooth_writable:s0
+/sys/devices/bluetooth/rfkill/rfkill0/type   u:object_r:sysfs_bluetooth_writable:s0
+/sys/devices/bluetooth/extldo                u:object_r:sysfs_bluetooth_writable:s0
 
 # camera
 /sys/devices/virtual/camera(/.*)?           u:object_r:camera_device:s0
