@@ -281,6 +281,9 @@ void stop_hci_filter() {
 
        ALOGV("%s: Entry ", __func__);
 
+       property_set("wc_transport.start_hci", "false");
+       property_set(BT_VND_FILTER_START, "false");
+
        property_get("wc_transport.hci_filter_status", value, "0");
        if (strcmp(value, "0") == 0) {
            ALOGI("%s: hci_filter has been stopped already", __func__);
