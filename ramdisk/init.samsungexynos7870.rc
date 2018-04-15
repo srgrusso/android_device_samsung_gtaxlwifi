@@ -673,8 +673,8 @@ on fs
     chmod 0664 /sys/class/input_booster/tail
 
 # Permissions for MDNIE
-    chown system system /sys/class/mdnie/mdnie/mode
-    chown system system /sys/class/mdnie/mdnie/scenario
+    chown system media_rw /sys/class/mdnie/mdnie/mode
+    chown system media_rw /sys/class/mdnie/mdnie/scenario
     chown system system /sys/class/mdnie/mdnie/accessibility
     chown system system /sys/class/mdnie/mdnie/sensorRGB
 
