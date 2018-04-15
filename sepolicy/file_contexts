@@ -95,15 +95,6 @@
 # camera
 /sys/devices/virtual/camera(/.*)?           u:object_r:camera_device:s0
 
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/mode                   u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/scenario               u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/night_mode             u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/lux                    u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/sensorRGB              u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/whiteRGB               u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/light_notification     u:object_r:sysfs_mdnie_writable:s0
-/sys/devices/[0-9]*\.dsim/lcd/panel/mdnie/accessibility          u:object_r:sysfs_mdnie_writable:s0
-
 # cbd
 /sys/devices/10f24000.mipi-lli/lli_control  u:object_r:sysfs_mipi_writable:s0
 
