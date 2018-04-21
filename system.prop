@@ -54,6 +54,9 @@ persist.media.treble_omx=false
 # sdcardfs
 ro.sys.sdcardfs=true
 
+# Navbar - enable Soft Keys
+qemu.hw.mainkeys=0
+
 # Wifi
 wifi.interface=wlan0
 #net.tethering.noprovisioning=true
