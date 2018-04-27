@@ -11,7 +11,8 @@
             <name>ICameraProvider</name>
             <instance>legacy/0</instance>
         </interface>
-    </hal>    
+    </hal>
+
     <hal format="hidl">
         <name>android.hardware.camera.device</name>
         <transport arch="32">passthrough</transport>
@@ -20,7 +21,7 @@
             <name>ICameraDevice</name>
             <instance>legacy/0</instance>
         </interface>
-    </hal>    
+    </hal>
 
     <!-- Graphics -->
     <hal format="hidl">
@@ -83,6 +84,7 @@
             <instance>slot1</instance>
         </interface>
     </hal>
+
     <hal format="hidl">
         <name>android.hardware.radio.deprecated</name>
         <transport>hwbinder</transport>
@@ -105,6 +107,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+
     <hal format="hidl">
         <name>android.hardware.wifi.supplicant</name>
         <transport>hwbinder</transport>
