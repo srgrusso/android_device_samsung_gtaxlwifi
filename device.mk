@@ -116,8 +116,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@1.0-service-sdm
 
 # hardware/samsung/AdvancedDisplay (MDNIE)
-PRODUCT_PACKAGES += \
-    AdvancedDisplay
+#PRODUCT_PACKAGES += \
+#    AdvancedDisplay
 
 PRODUCT_PACKAGES += \
     libshim_camera \
