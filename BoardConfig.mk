@@ -91,8 +91,8 @@ TARGET_AUDIOHAL_VARIANT := samsung
 TARGET_POWERHAL_VARIANT := samsung
 
 # Samsung Hardware
-BOARD_HARDWARE_CLASS += device/samsung/gtaxlwifi/lineagehw
-BOARD_HARDWARE_CLASS += hardware/samsung/lineagehw
+BOARD_HARDWARE_CLASS := device/samsung/gtaxlwifi/lineagehw
+#BOARD_HARDWARE_CLASS += hardware/samsung/lineagehw
 
 # Samsung Camera
 BOARD_USE_SAMSUNG_CAMERAFORMAT_NV21 := true
