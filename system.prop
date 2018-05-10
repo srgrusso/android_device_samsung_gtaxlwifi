@@ -57,4 +57,4 @@ ro.sys.sdcardfs=false
 
 # Wifi
 wifi.interface=wlan0
-net.tethering.noprovisioning=true
+#net.tethering.noprovisioning=true
