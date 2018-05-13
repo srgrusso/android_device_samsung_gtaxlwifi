@@ -108,10 +108,6 @@ PRODUCT_PACKAGES += \
     memtrack.exynos5 \
     hwcomposer.exynos5
 
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.manager@1.0
-
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
