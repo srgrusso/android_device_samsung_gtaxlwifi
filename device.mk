@@ -16,9 +16,6 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
-
 LOCAL_PATH := device/samsung/gtaxlwifi
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
