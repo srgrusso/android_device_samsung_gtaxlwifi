@@ -121,8 +121,8 @@ PRODUCT_BOOT_JARS += \
     vendor.lineage.livedisplay-V1.0-java
 
 # hardware/samsung/AdvancedDisplay (MDNIE)
-PRODUCT_PACKAGES += \
-    AdvancedDisplay
+#PRODUCT_PACKAGES += \
+#    AdvancedDisplay
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl-legacy \
