@@ -48,11 +48,11 @@ PRODUCT_PACKAGES += \
 
 # cpboot-daemon
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ramdisk/cbd:root/sbin/cbd
+    $(LOCAL_PATH)/ramdisk/cbd:system/bin/cbd
 
 # sswap
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/ramdisk/sswap:root/sbin/sswap
+    $(LOCAL_PATH)/ramdisk/sswap:system/bin/sswap
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -79,9 +79,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
-#PRODUCT_PACKAGES += \
-#    gralloc.exynos5
-
 PRODUCT_PACKAGES += \
     libion \
     libfimg \
@@ -101,8 +98,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init/android.hardware.media.omx@1.0-service.rc:system/vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 
 PRODUCT_PACKAGES += \
-    memtrack.exynos5 \
     hwcomposer.exynos5
+
+# Memory
+PRODUCT_PACKAGES += \
+    memtrack.exynos5 \
+    android.hardware.memtrack@1.0-impl
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -155,10 +156,6 @@ PRODUCT_PACKAGES += \
     ebtables \
     ethertypes \
     libebtc
-
-# Memory
-PRODUCT_PACKAGES += \
-    android.hardware.memtrack@1.0-impl
 
 # WCNSS
 PRODUCT_COPY_FILES += \
@@ -250,11 +247,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.universal7870 \
     android.hardware.power@1.0-impl \
-    android.hardware.power@1.0-service \
+    android.hardware.power@1.0-service
 
 # permission-updater
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)//power/android.hardware.power@1.0-service.rc:system/vendor/etc/init/android.hardware.power@1.0-service.rc
+
 # Lights
 PRODUCT_PACKAGES += \
     lights.universal7870 \
@@ -264,6 +262,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.vibrator@1.0-impl
+
+# ADB
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=adb \
+    ro.adb.secure=0
 
 # Offmode charger
 PRODUCT_PACKAGES += \
