@@ -69,8 +69,6 @@ on boot
     # Pcie WiFi T-put setting
     write /sys/class/net/wlan0/queues/rx-0/rps_cpus 00
 
-    restart wpa_supplicant
-
 service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
         -iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf \
         -I/system/vendor/etc/wifi/wpa_supplicant_overlay.conf -N \
