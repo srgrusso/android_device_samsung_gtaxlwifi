@@ -34,3 +34,5 @@ type batch_io_device, dev_type;
 type ttyHS0_device, dev_type;
 
 #type diag_device, dev_type, mlstrustedobject;
+
+type gps_device, dev_type;

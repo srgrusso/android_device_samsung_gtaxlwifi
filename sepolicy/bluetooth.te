@@ -6,6 +6,7 @@ allow bluetooth vendor_file:file { r_file_perms execute };
 
 # /dev/ttySAC0
 allow bluetooth bluetooth_device:chr_file { rw_file_perms ioctl };
+allow bluetooth bluetooth_device:chr_file { open read write ioctl };
 
 # wcnss_filter
 allow bluetooth wcnss_filter:unix_stream_socket connectto;

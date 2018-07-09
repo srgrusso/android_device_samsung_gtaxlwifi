@@ -40,3 +40,5 @@ type persist_sensortool_file, file_type;
 type persist_camera_file, file_type;
 
 #type debugfs_ipc, debugfs_type, fs_type;
+
+type sswap_data_file, file_type;
