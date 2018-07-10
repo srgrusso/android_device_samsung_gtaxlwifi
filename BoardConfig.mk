@@ -220,11 +220,11 @@ TARGET_LD_SHIM_LIBS := \
 TARGET_LD_SHIM_LIBS += \
     /system/lib/libcamera_client.so|libcamera_client_shim.so \
     /system/lib/libexynoscamera.so|libexynoscamera_shim.so \
-    /system/lib/libstagefright.so|/system/lib/libstagefright_shim.so
+    /system/lib/libstagefright.so|libstagefright_shim.so
 
 # Shims: gpsd
 TARGET_LD_SHIM_LIBS += \
-    /system/bin/gpsd|/vendor/lib/gpsd_shim.so
+    /system/bin/gpsd|gpsd_shim.so
 
 # SELinux
 BOARD_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy
