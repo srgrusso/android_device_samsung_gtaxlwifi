@@ -107,11 +107,11 @@
 /dev/seiren               0660   system     audio
 
 # MobiCore
-/dev/mobicore             0600   drmrpc     drmrpc
-/dev/mobicore-user        0660   drm        drmrpc
+#/dev/mobicore             0600   drmrpc     drmrpc
+#/dev/mobicore-user        0660   drm        drmrpc
 
 # Secure MEM driver
-/dev/s5p-smem             0660   drm        drmrpc
+#/dev/s5p-smem             0660   drm        drmrpc
 
 # MobiCore
 #/dev/mobicore             0700   system     system
@@ -176,7 +176,7 @@
 /dev/mobicore-user        0666   radio     system
 
 # Secure MEM driver
-/dev/s5p-smem             0660   system     system
+/dev/s5p-smem             0660   media     system
 
 # sensorhub
 /dev/ssp_sensorhub        0660   system     system
