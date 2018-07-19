@@ -35,23 +35,28 @@ TARGET_SOC := exynos7870
 TARGET_BOOTLOADER_BOARD_NAME := universal7870
 
 # CPU
-TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_ABI := armeabi-v7a
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a53
-TARGET_CPU_CORTEX_A53 := true
 
-ENABLE_CPUSETS := true
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv7-a-neon
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Binder
 TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm
+TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
+#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-cortex_a53-linux-gnueabi-uber/bin
+#KERNEL_TOOLCHAIN_PREFIX := aarch64-cortex_a53-linux-gnueabi-
 
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -175,7 +180,7 @@ CHARGING_ENABLED_PATH := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_VENDOR := samsung
 
 #Hidl
-DEVICE_MANIFEST_FILE := device/samsung/gtaxlwifi/manifest.xml
+#DEVICE_MANIFEST_FILE := device/samsung/gtaxlwifi/manifest.xml
 
 # Sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
@@ -211,12 +216,19 @@ TARGET_LD_SHIM_LIBS += \
     /system/lib/omx/libOMX.Exynos.AVC.Encoder.so|libui_shim.so \
     /system/lib/omx/libOMX.Exynos.HEVC.Decoder.so|libui_shim.so \
     /system/lib/omx/libOMX.Exynos.HEVC.Encoder.so|libui_shim.so \
+    /system/lib/omx/libOMX.Exynos.MPEG2.Decoder.so|libui_shim.so \
     /system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so|libui_shim.so \
     /system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so|libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.VP8.Decoder.so|libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.VP8.Encoder.so|libui_shim.so \
     /system/lib/omx/libOMX.Exynos.VP9.Decoder.so|libui_shim.so \
-    /system/lib/omx/libOMX.Exynos.WMV.Decoder.so|libui_shim.so
+    /system/lib64/omx/libOMX.Exynos.AVC.Decoder.so|libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.AVC.Encoder.so|libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so|libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so|libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.MPEG2.Decoder.so|libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so|libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so|libui_shim.so \
+    /system/lib64/omx/libOMX.Exynos.VP9.Decoder.so|libui_shim.so
+
 
 # Shims
 TARGET_LD_SHIM_LIBS += \
