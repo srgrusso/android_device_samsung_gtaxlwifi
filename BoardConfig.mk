@@ -234,7 +234,8 @@ TARGET_LD_SHIM_LIBS += \
 TARGET_LD_SHIM_LIBS += \
     /system/lib/libcamera_client.so|libcamera_client_shim.so \
     /system/lib/libexynoscamera.so|libexynoscamera_shim.so \
-    /system/lib/libstagefright.so|libstagefright_shim.so
+    /system/lib/libstagefright.so|libstagefright_shim.so \
+    /system/lib64/libstagefright.so|libstagefright_shim.so
 
 # Shims: gpsd
 TARGET_LD_SHIM_LIBS += \
