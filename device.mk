@@ -263,11 +263,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.vibrator@1.0-impl
 
-# ADB
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=adb \
-    ro.adb.secure=0
-
 # Offmode charger
 PRODUCT_PACKAGES += \
     charger_res_images \
