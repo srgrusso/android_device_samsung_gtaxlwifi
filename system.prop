@@ -53,4 +53,5 @@ qemu.hw.mainkeys=0
 
 # Wifi
 wifi.interface=wlan0
+wifi.direct.non-concurrent=true
 #net.tethering.noprovisioning=true
