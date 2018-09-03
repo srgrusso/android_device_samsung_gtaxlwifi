@@ -48,9 +48,6 @@ ro.radio.noril=yes
 #Treble
 persist.media.treble_omx=false
 
-# sdcardfs
-ro.sys.sdcardfs=false
-
 # Navbar - enable Soft Keys
 qemu.hw.mainkeys=0
 
