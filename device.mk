@@ -32,8 +32,8 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_BOOTANIMATION_HALF_RES := true
 
 # Flat device tree for boot image
-#PRODUCT_PACKAGES += \
-#    dtbhtoolExynos
+PRODUCT_PACKAGES += \
+    dtbhtoolExynos
 
 # Ramdisk
 PRODUCT_PACKAGES += \
