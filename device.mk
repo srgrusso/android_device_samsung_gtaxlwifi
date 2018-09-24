@@ -94,8 +94,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libExynosOMX_shim \
-    libui_shim \
-    libstagefright_shim
+    libui_shim
 
 # Overriden service definition
 PRODUCT_COPY_FILES += \
@@ -125,14 +124,6 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_PACKAGES += \
    android.hardware.drm@1.0-impl
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@1.0-service-sdm \
-    vendor.lineage.livedisplay-V1.0-java
-
-PRODUCT_BOOT_JARS += \
-    vendor.lineage.livedisplay-V1.0-java
 
 # hardware/samsung/AdvancedDisplay (MDNIE)
 #PRODUCT_PACKAGES += \
@@ -226,6 +217,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml  \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+    $(LOCAL_PATH)/configs/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 # GPS
