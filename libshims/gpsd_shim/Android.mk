@@ -20,9 +20,6 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := \
 	gpsd.cpp
 
-LOCAL_C_INCLUDES := \
-	$(TOP)/frameworks/native/include_sensor
-
 LOCAL_SHARED_LIBRARIES := \
 	liblog \
 	libsensor
@@ -30,6 +27,6 @@ LOCAL_SHARED_LIBRARIES := \
 LOCAL_MODULE := gpsd_shim
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-#LOCAL_VENDOR_MODULE := true
+LOCAL_VENDOR_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
