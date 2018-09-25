@@ -289,6 +289,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=adb \
     ro.adb.secure=0
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.bt.bdaddr_path=/efs/bluetooth/bt_addr
+
 # Offmode charger
 PRODUCT_PACKAGES += \
     charger_res_images \
