@@ -94,7 +94,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libExynosOMX_shim \
-    libui_shim
+    libui_shim \
+    libstagefright_shim
 
 # Overriden service definition
 PRODUCT_COPY_FILES += \
