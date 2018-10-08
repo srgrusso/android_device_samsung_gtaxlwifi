@@ -102,8 +102,11 @@ TARGET_AUDIOHAL_VARIANT := samsung
 TARGET_POWERHAL_VARIANT := samsung
 
 # Samsung Hardware
-BOARD_HARDWARE_CLASS += device/samsung/gtaxlwifi/lineagehw
-BOARD_HARDWARE_CLASS += hardware/samsung/lineagehw
+JAVA_SOURCE_OVERLAYS += \
+    org.lineageos.hardware|$(LOCAL_PATH)/lineagehw|**/*.java
+
+JAVA_SOURCE_OVERLAYS += \
+    org.lineageos.hardware|hardware/samsung/lineagehw|**/*.java
 
 # Samsung Camera
 BOARD_USE_SAMSUNG_CAMERAFORMAT_NV21 := true
