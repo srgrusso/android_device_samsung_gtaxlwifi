@@ -49,7 +49,7 @@ ro.radio.noril=yes
 persist.media.treble_omx=false
 
 # Navbar - enable Soft Keys
-qemu.hw.mainkeys=0
+#qemu.hw.mainkeys=0
 
 # Wifi
 wifi.interface=wlan0
