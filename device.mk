@@ -141,12 +141,9 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += \
 #    Snap
 
-# Radio
 PRODUCT_PACKAGES += \
     libxml2 \
-    libprotobuf-cpp-full \
-    android.hardware.radio@1.0 \
-    android.hardware.radio.deprecated@1.0
+    libprotobuf-cpp-full
 
 PRODUCT_PACKAGES += \
     SamsungServiceMode
@@ -181,14 +178,11 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf \
     wificond \
-    android.hardware.wifi@1.0-service \
-    android.hardware.wifi@1.0 \
-    android.hardware.wifi@1.0-impl
+    android.hardware.wifi@1.0-service
 
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth.a2dp@1.0-impl \
     libbt-vendor
 
 # Network
@@ -208,6 +202,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio.r_submix.default \
     libtinycompress \
+    libtinyalsa \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl
 
