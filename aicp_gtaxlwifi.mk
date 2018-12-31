@@ -36,3 +36,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="followmsi"
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=gtaxlwifixx \
+    PRIVATE_BUILD_DESC="gtaxlwifixx-user 7.0 NRD90M T580XXU2BQI9 release-keys"
+
+BUILD_FINGERPRINT := samsung/gtaxlwifixx/gtaxlwifi:7.0/NRD90M/T580XXU2BQI9:user/release-keys
