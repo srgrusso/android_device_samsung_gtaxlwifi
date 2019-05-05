@@ -1,0 +1,7 @@
+# Modemloader
+type modemloader_prop, property_type;
+
+# CP-Boot Daemon
+type cbd_prop, property_type;
+
+type wc_transport_prop, property_type;
