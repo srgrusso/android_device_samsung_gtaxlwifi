@@ -33,6 +33,14 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
+#Apps
+PRODUCT_PACKAGES += \
+    Camera2 \
+    Gallery2 \
+    Music \
+    Calendar \
+    DeskClock
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=gtaxlwifixx \
     PRIVATE_BUILD_DESC="gtaxlwifixx-user 8.1.0 M1AJQ T580XXU4CRK5 release-keys"
