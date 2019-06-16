@@ -24,6 +24,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/aosp/config/common.mk)
 
+# Boot animation resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := aosp_gtaxlwifi
 PRODUCT_DEVICE := gtaxlwifi
