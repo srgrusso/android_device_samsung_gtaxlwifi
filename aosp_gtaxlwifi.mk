@@ -24,6 +24,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit some common XenonHD stuff.
 $(call inherit-product, vendor/xenonhd/config/common_full_tablet_wifionly.mk)
 
+XENONHD_BUILD := true
+
 # Boot animation resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
