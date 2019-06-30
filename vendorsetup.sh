@@ -1,1 +1,1 @@
-add_lunch_combo lineage_gtaxlwifi-userdebug
+add_lunch_combo validus_gtaxlwifi-userdebug
