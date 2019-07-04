@@ -293,7 +293,7 @@ PRODUCT_PACKAGES += \
 
 # Replace SubstratumKey.apk    
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/packages/apps/Substratum_Key_1.0.apk:system/priv-apps/SubstratumKey.apk \
+    $(LOCAL_PATH)/packages/apps/Substratum_Key_1.0.apk:system/priv-app/SubstratumKey/SubstratumKey.apk \
    
 
 # Offmode charger
