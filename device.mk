@@ -291,6 +291,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     su
 
+# Replace SubstratumKey.apk    
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/packages/apps/Substratum_Key_1.0.apk:system/priv-apps/SubstratumKey.apk \
+   
+
 # Offmode charger
 PRODUCT_PACKAGES += \
     charger_res_images \
