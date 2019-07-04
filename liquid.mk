@@ -25,8 +25,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, vendor/liquid/config/common_full_tablet_wifionly.mk)
 
 LIQUID_BUILD := true
-LIQUID_BUILDTYPE := UNOFFICIAL
-LIQUID_EXTRAVERSION := gtaxlwifi
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := liquid_gtaxlwifi
