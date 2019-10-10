@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/linquid_gtaxlwifi.mk
+    $(LOCAL_DIR)/liquid_gtaxlwifi.mk
 
 COMMON_LUNCH_CHOICES := \
     liquid_gtaxlwifi-userdebug
