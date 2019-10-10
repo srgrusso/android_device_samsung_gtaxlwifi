@@ -21,11 +21,13 @@ $(call inherit-product, device/samsung/gtaxlwifi/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit some common Liquid Remix stuff.
+$(call inherit-product, vendor/liquid/config/common_full_tablet_wifionly.mk)
+
+LIQUID_BUILD := gtaxlwifi
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_gtaxlwifi
+PRODUCT_NAME := liquid_gtaxlwifi
 PRODUCT_DEVICE := gtaxlwifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T580
@@ -37,6 +39,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="gtaxlwifi" \
     PRODUCT_NAME="gtaxlwifi" \
     PRIVATE_BUILD_DESC="gtaxlwifixx-user 8.1.0 M1AJQ T580XXU4CRK5 release-keys"
+    
+# Liquid Remix Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="srgrusso"           
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := Xiaomi/sagit/sagit:7.1.1/NMF26X/V8.2.17.0.NCACNEC:user/release-keys
