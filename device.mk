@@ -128,8 +128,8 @@ PRODUCT_PACKAGES += \
 #    SamsungDoze
 
 # Touch features
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.touch@1.0-service.samsung
 
 # Camera
 PRODUCT_PACKAGES += \
