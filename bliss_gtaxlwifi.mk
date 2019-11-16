@@ -40,6 +40,8 @@ PRODUCT_PACKAGES += \
     Music \
     Calendar
     
+#Remove apps    
+PRODUCT_PACKAGES -= Dialer
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="gtaxlwifi" \
