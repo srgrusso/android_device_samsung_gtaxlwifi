@@ -33,6 +33,14 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
+#Apps
+PRODUCT_PACKAGES += \
+    Camera2 \
+    Gallery2 \
+    Music \
+    Calendar
+    
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="gtaxlwifi" \
     PRODUCT_NAME="gtaxlwifi" \
