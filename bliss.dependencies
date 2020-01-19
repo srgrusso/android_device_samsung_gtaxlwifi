@@ -1,4 +1,3 @@
- 
 [
   {
     "remote": "github",
@@ -20,7 +19,7 @@
   },
   {
     "remote": "github",
-    "repository": srgrusso/android_hardware_samsung",
+    "repository": "srgrusso/android_hardware_samsung",
     "target_path": "hardware/samsung",
     "revision": "los-17.0"
   }
