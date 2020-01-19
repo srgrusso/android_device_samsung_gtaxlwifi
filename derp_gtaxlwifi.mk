@@ -21,11 +21,19 @@ $(call inherit-product, device/samsung/gtaxlwifi/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit some common AOSIP stuff.
+$(call inherit-product, vendor/aosip/config/common_full_tablet_wifionly.mk)
+AOSIP_BUILD := true
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+IS_PHONE := true
+TARGET_MINIMAL_APPS := false
+TARGET_INCLUDE_STOCK_ARCORE := false
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_gtaxlwifi
+PRODUCT_NAME := derp_gtaxlwifi
 PRODUCT_DEVICE := gtaxlwifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T580
