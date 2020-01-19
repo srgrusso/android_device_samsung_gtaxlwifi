@@ -1,0 +1,27 @@
+ 
+[
+  {
+    "remote": "github",
+    "repository": "srgrusso/android_device_samsung_gtaxlwifi",
+    "target_path": "device/samsung/gtaxlwifi",
+    "revision": "bliss-q"
+  },
+  {
+    "remote": "github",
+    "repository": "srgrusso/android_vendor",
+    "target_path": "vendor/samsung/gtaxlwifi",
+    "revision": "gtaxlwifi-lineage-17.0_64"
+  },
+  {
+    "remote": "github",
+    "repository": "srgrusso/android_kernel_samsung_exynos7870",
+    "target_path": "kernel/samsung/exynos7870",
+    "revision": "10-m105"
+  },
+  {
+    "remote": "github",
+    "repository": srgrusso/android_hardware_samsung",
+    "target_path": "hardware/samsung",
+    "revision": "los-17.0"
+  }
+]
