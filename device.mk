@@ -135,8 +135,8 @@ PRODUCT_PACKAGES += \
 #    vendor.lineage.touch@1.0-service.samsung
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-exynos
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay@2.0-service.samsung-exynos
 
 # Camera
 PRODUCT_PACKAGES += \
