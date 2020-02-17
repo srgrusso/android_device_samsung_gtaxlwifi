@@ -21,6 +21,6 @@
     "remote": "github",
     "repository": "srgrusso/android_hardware_samsung",
     "target_path": "hardware/samsung",
-    "revision": "los-17.0"
+    "revision": "los-17.1"
   }
 ] 
