@@ -35,13 +35,6 @@ PRODUCT_MODEL := SM-T580
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
-
-#Apps
-PRODUCT_PACKAGES += \
-    Camera2 \
-    Gallery2 \
-    Music \
-    Calendar
     
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.picture_in_picture.xml:system/etc/permissions/android.software.picture_in_picture.xml \
