@@ -21,6 +21,9 @@ $(call inherit-product, device/samsung/gtaxlwifi/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Inherit some common Bliss stuff.
 $(call inherit-product, vendor/bliss/config/common_full_tablet_wifionly.mk)
 
