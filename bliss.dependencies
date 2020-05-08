@@ -16,11 +16,5 @@
     "repository": "srgrusso/android_hardware_samsung",
     "target_path": "hardware/samsung",
     "revision": "los-17.1"
-  },
-  {
-    "remote": "gitlab",
-    "repository": "BlissRoms/vendor_gapps",
-    "target_path": "vendor/gapps",
-    "revision": "q"
   }  
 ] 
