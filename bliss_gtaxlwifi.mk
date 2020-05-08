@@ -38,6 +38,10 @@ TARGET_GAPPS_OVERRIDE += \
     CalculatorGooglePrebuilt \
     CalendarGooglePrebuilt \
     NfcNci
+    
+#Apps
+PRODUCT_PACKAGES += \
+    Camera2    
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := bliss_gtaxlwifi
