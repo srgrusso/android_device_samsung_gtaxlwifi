@@ -31,7 +31,13 @@ $(call inherit-product, vendor/bliss/config/common_full_tablet_wifionly.mk)
 $(call inherit-product-if-exists, vendor/gapps/gapps.mk)
 
 TARGET_GAPPS_OVERRIDE += \
-    GoogleDialer
+    GoogleDialer \
+    GoogleCamera \
+    Photos \
+    PrebuiltGmail \
+    CalculatorGooglePrebuilt \
+    CalendarGooglePrebuilt \
+    NfcNci
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := bliss_gtaxlwifi
