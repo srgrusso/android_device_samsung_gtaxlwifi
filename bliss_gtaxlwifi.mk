@@ -37,7 +37,8 @@ TARGET_GAPPS_OVERRIDE += \
     PrebuiltGmail \
     CalculatorGooglePrebuilt \
     CalendarGooglePrebuilt \
-    NfcNci
+    NfcNci \
+    Snap
     
 #Apps
 PRODUCT_PACKAGES += \
