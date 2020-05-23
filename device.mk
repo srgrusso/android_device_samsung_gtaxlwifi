@@ -128,7 +128,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    SamsungDoze
+    CustomDoze
 
 # Touch features
 PRODUCT_PACKAGES += \
