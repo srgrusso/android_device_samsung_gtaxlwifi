@@ -306,6 +306,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     lineage_charger_res_images
+    
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml   
 
 # call Samsung LSI board support package
 #INCLUDE_EXYNOS_BSP := true
